@@ -13,22 +13,44 @@
           alt="member thumbnail" -%}
         {%- endif %}
         <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ member.name }}</h2>
-          <p class="card-text">{{ member.description }}</p>
+          <h2 class="card-title">{{ member.name }}</h2>
           <div class="row ml-1 mr-1 p-0">
-            {%- if member.github -%}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ member.github }}"><i class="fab fa-github gh-icon"></i></a>
+            {%- if member.home_page -%}
+            <div class="home_page-icon">
+              <div class="equipe_icon" data-toggle="tooltip" title="Home Page">
+                <a href="{{ member.home_page }}"><i class="fa-solid fa-house gh-icon"></i></a>
               </div>
-              {%- if member.github_stars -%}
-              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                <i class="fas fa-star"></i>
-                <span id="{{ member.github_stars }}-stars"></span>
-              </span>
-              {%- endif %}
             </div>
             {%- endif %}
+            {%- if member.linkedin -%}
+            <div class="linkedin-icon">
+              <div class="equipe_icon" data-toggle="tooltip" title="LinkedIn">
+                <a href="{{ member.linkedin }}"><i class="fab fa-linkedin gh-icon"></i></a>
+              </div>
+            </div>
+            {%- endif %}
+            {%- if member.github -%}
+            <div class="github_icon">
+              <div class="equipe_icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ member.github }}"><i class="fab fa-github gh-icon"></i></a>
+              </div>
+            </div> 
+            {%- endif %}
+            {%- if member.instagram -%}
+            <div class="instagram-icon">
+              <div class="equipe_icon" data-toggle="tooltip" title="Instagram">
+                <a href="{{ member.instagram }}"><i class="fab fa-instagram gh-icon"></i></a>
+              </div>
+            </div>
+            {%- endif %}
+            {%- if member.twitter -%}
+            <div class="twitter-icon">
+              <div class="equipe_icon" data-toggle="tooltip" title="Twitter">
+                <a href="{{ member.twitter }}"><i class="fab fa-twitter gh-icon"></i></a>
+              </div>
+            </div>
+            {%- endif %}
+
           </div>
         </div>
       </div>

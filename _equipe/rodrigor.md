@@ -1,9 +1,13 @@
 ---
 layout: page
 name: Rodrigo Rebouças de Almeida
-description: a project with a background image
+description: descricao Rodrigo 
 img: assets/img/12.jpg
-github: rodrigor
+home_page: https://www.rodrigor.com
+github: https://github.com/rodrigor
+linkedin: https://www.linkedin.com/in/rodrigoreboucas/
+instagram: https://www.instagram.com/rodrigorcom/
+twitter: https://www.twitter.com/rodrigor/
 importance: 1
 category: professores
 ---

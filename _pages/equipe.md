@@ -10,7 +10,7 @@ horizontal: false
 ---
 
 <!-- pages/equipe.md -->
-<div class="projects">
+<div class="equipe">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized team -->
   {%- for category in page.display_categories %}
