@@ -1,8 +1,8 @@
 ---
 layout: cv
-permalink: 
-title: 
-nav: true
-nav_order: 4
+permalink: cv
+title: CV
+nav: false
+nav_order: 2
 cv_pdf: pdf.pdf
 ---
