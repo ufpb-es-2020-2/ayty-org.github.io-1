@@ -1,23 +1,25 @@
 ---
-layout: page
-name: Rodrigo Rebouças de Almeida
-description: descricao Rodrigo 
-img: assets/img/12.jpg
-home_page: https://www.rodrigor.com
-github: https://github.com/rodrigor
-linkedin: https://www.linkedin.com/in/rodrigoreboucas/
-instagram: https://www.instagram.com/rodrigorcom/
-twitter: https://www.twitter.com/rodrigor/
+layout: project
+title: Phoebus Tecnologia
+description: Projeto de colaboração com a empresa Phoebus Tecnologia
+img: assets/img/projetos/phoebus.png
 importance: 1
-category: professores
+category: Empresas #Pesquisa, Extensão, Empresas
+projeto: Phoebus
 ---
 
-Página de professor
+Projeto de pesquisa e desenvolvimento que envolve a empresa Phoebus Tecnologia e a UFPB. O projeto atua nas áreas de e-commerce, desenvolvimento para smart-PoS e Gerência de Dívidas Técnicas.
+
+Ao longo do projeto os alunos desenvolvem soluções para problemas reais, além de interagir diretamente com profissionais das equipes da empresa. Também participam de capacitações e outros eventos promovidos pela Phoebus.
+
+A equipe trabalha em Rio Tinto, em um laboratório dedicado ao projeto, com acesso a computadores, equipamentos e infraestrutura de desenvolvimento usados na empresa. 
 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+
+
+
+
+
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 

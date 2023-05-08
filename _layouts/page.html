@@ -10,6 +10,18 @@ layout: default
           </header>
 
           <article>
+          {% if page.img -%}
+          <div class="profile float-right">
+               {%- assign profile_image_path = page.img -%}
+               {%- assign profile_image_class = "img-fluid  rounded" -%}
+  
+                {% include figure.html
+                path=profile_image_path
+                class=profile_image_class
+                alt=page.profile.image -%}
+            </div>
+            {%- endif %}
+
             {{ content }}
           </article>
 

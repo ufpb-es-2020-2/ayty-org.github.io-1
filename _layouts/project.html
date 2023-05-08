@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">Projeto: {{ page.title }}</h1>
+            <p class="post-description">{{ page.description }}</p>
+          </header>
+
+          <article>
+          {% if page.img -%}
+          <div class="profile float-right">
+               {%- assign profile_image_path = page.img -%}
+               {%- assign profile_image_class = "img-fluid  rounded" -%}
+  
+                {% include figure.html
+                path=profile_image_path
+                class=profile_image_class
+                alt=page.profile.image -%}
+            </div>
+            {%- endif %}
+
+            {{ content }}
+
+            <h2>Equipe</h2>
+
+            <!-- pages/equipe.md -->
+            <div class="equipe">
+            {%- if page.projeto %}
+              <!-- Display categorized team -->
+              {%- assign categorized_equipe = site.equipe | where: "projeto", page.projeto -%}
+              {%- assign sorted_equipe = categorized_equipe | sort: "importance" %}
+              <!-- Generate cards for each member -->
+              {% if page.horizontal -%}
+              <div class="container">
+                <div class="row row-cols-2">
+                {%- for member in sorted_equipe -%}
+                  {% include equipe_horizontal.html %}
+                {%- endfor %}
+                </div>
+              </div>
+              {%- else -%}
+              <div class="grid">
+                {%- for member in sorted_equipe -%}
+                  {% include equipe.html %}
+                {%- endfor %}
+              </div>
+              {%- endif -%}
+            
+            
+            {%- else -%}
+            <!-- Display members without categories -->
+              {%- assign sorted_members = site.equipe | sort: "importance" -%}
+              <!-- Generate cards for each member -->
+              {% if page.horizontal -%}
+              <div class="container">
+                <div class="row row-cols-4">
+                {%- for member in sorted_members -%}
+                  {% include equipe_horizontal.html %}
+                {%- endfor %}
+                </div>
+              </div>
+              {%- else -%}
+              <div class="grid">
+                {%- for member in sorted_members -%}
+                  {% include equipe.html %}
+                {%- endfor %}
+              </div>
+              {%- endif -%}
+            {%- endif -%}
+            </div>
+            
+            <!-- END EQUIPE -->
+
+          </article>
+
+        </div>

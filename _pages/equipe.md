@@ -5,7 +5,7 @@ permalink: /equipe/
 description: Nossa equipe
 nav: true
 nav_order: 2
-display_categories: [professores, bolsistas, antigos bolsistas]
+display_categories: [Professores, Alunos, Ex-alunos]
 horizontal: false
 ---
 
@@ -18,7 +18,7 @@ horizontal: false
   {%- assign categorized_equipe = site.equipe | where: "category", category -%}
   {%- assign sorted_equipe = categorized_equipe | sort: "importance" %}
   <!-- Generate cards for each member -->
-  {% if page.horizontal -%}
+  <!-- {% if page.horizontal -%}
   <div class="container">
     <div class="row row-cols-2">
     {%- for member in sorted_equipe -%}
@@ -26,7 +26,7 @@ horizontal: false
     {%- endfor %}
     </div>
   </div>
-  {%- else -%}
+  {%- else -%} -->
   <div class="grid">
     {%- for member in sorted_equipe -%}
       {% include equipe.html %}
@@ -41,7 +41,7 @@ horizontal: false
   <!-- Generate cards for each member -->
   {% if page.horizontal -%}
   <div class="container">
-    <div class="row row-cols-2">
+    <div class="row row-cols-4">
     {%- for member in sorted_members -%}
       {% include equipe_horizontal.html %}
     {%- endfor %}

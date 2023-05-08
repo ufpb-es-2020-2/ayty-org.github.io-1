@@ -10,15 +10,17 @@
         {%- if member.img %}
         {%- include figure.html
           path=member.img
+          class="card-img-top .img-fluid rounded-circle profile_pic"
           alt="member thumbnail" -%}
         {%- endif %}
         <div class="card-body">
           <h2 class="card-title">{{ member.name }}</h2>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="funcao text-lowercase">({{ member.funcao }})</p>
+          <div class="row ml-1 mr-1 p-0 justify-content-center">
             {%- if member.home_page -%}
             <div class="home_page-icon">
               <div class="equipe_icon" data-toggle="tooltip" title="Home Page">
-                <a href="{{ member.home_page }}"><i class="fa-solid fa-house gh-icon"></i></a>
+                <a href="{{ member.home_page }}"><i class="fa fa-home gh-icon"></i></a>
               </div>
             </div>
             {%- endif %}

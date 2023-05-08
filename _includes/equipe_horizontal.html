@@ -7,14 +7,14 @@
     <div class="card hoverable">
       <div class="row g-0">
         {%- if member.img -%}
-        <div class="card-img col-md-6">
-          {% include figure.html path=member.img alt="member thumbnail" %}
+        <div class=" col-md-6">
+          {% include figure.html path=member.img class="card-img-top mx-auto d-block" alt="member thumbnail" %}
         </div>
         <div class="col-md-6">
         {%- else -%}
         <div class="col-md-12">
         {%- endif -%}
-          <div class="card-body">
+          <div class="card-body ">
             <h3 class="card-title">{{ member.name }}</h3>
             <div class="row ml-1 mr-1 p-0">
               {%- if member.github -%}
@@ -22,12 +22,6 @@
                 <div class="icon" data-toggle="tooltip" title="Code Repository">
                   <a href="{{ member.github }}"><i class="fab fa-github gh-icon"></i></a>
                 </div>
-                {%- if member.github_stars -%}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fas fa-star"></i>
-                  <span id="{{ member.github_stars }}-stars"></span>
-                </span>
-                {%- endif -%}
               </div>
               {%- endif -%}
             </div>
