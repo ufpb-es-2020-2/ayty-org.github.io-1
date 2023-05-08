@@ -8,7 +8,7 @@ github: # Github
 linkedin: #LinkedIn 
 instagram: #Instagram 
 twitter: #Twitter
-importance: 1
+importance: 4
 category: Alunos #Professores, Colaboradores externos, Alunos, Ex-alunos
 funcao: Bolsista Dev #Bolsista Testador, Bolsista Dev, Technical Debt
 projeto: Phoebus #ESIG,SNET,Universi.me,Engenharia.Software
