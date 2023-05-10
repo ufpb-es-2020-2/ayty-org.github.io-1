@@ -5,7 +5,7 @@ permalink: /equipe/
 description: Nossa equipe
 nav: true
 nav_order: 2
-display_categories: [Professores, Alunos, Ex-alunos]
+display_categories: [Professores, Colaboradores externos, Alunos, Ex-alunos]
 horizontal: false
 ---
 
