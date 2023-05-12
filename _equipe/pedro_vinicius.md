@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Pedro Vinicius Barros Rocha Dias
-img: assets\img\equipe\pedro_vinicius.jpg
+img: assets/img/equipe/pedro_vinicius.jpg
 funcao: Technical Debt 
 projeto: Phoebus 
 desde: 06/04/20023
